@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>
+Welcome Foodsters
+</title><script type = "text/javascript"
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		  <script>
+		  $(document).ready(function(){
+		  $('.buttons').on('click',function(){
+		   var panelid=$(this).attr('data-panel');
+     $('.'+panelid).toggle(2000);
+
+
+	   });
+	  $('.box').on('click',function(){
+
+	 var paneli=$(this).attr('data-clikd');
+	 $('.'+paneli).toggle(2000);
+
+
+	  });
+	  $('input').on('click',function(){
+	  $(this).siblings().remove();
+	  });
+	  $('.box').on('click',function(){
+	   var panelo=$(this).attr('data-clikd');
+	   alert(panelo);
+	   });
+	   });
+
+</script>
+</head>
+<body>
+<link rel="stylesheet"href="indexstyle.css"/>
+<p id="first_para">The Breakfast club.
+</p>
+<p id="second_para">
+<input class="buttons" id="btn1" data-panel="block1" data-co=""type="button" value="Morning">
+<input class="buttons" id="btn2" data-panel="block2" data-co=""type="button" value="Evening">
+
+
+</p>
+<p class="all">
+<div  id="block1" style="display:none;"class="block1" ><button data-clikd="newdiv1" id="one" class="box">Breakfast</button ><p id="cone" class="content">7am-9am</p></div>
+<div  id="block2" style="display:none;"class="block1" ><button data-clikd="newdiv2"id="two" class="box">Lunch</button><p id="ctwo" class="content">12pm-2pm</p></div>
+<div  id="block3" style="display:none;"class="block2" ><button data-clikd="newdiv3"id="third" class="box">Snacks</button><p id="cthird" class="content">4pm-7pm</p></div>
+<div  id="block4" style="display:none;"class="block2" ><button data-clikd="newdiv4"id="fourth" class="box">Dinner</button><p id="cfourth"class="content">9pm-11pm</p></div>
+</p>
+<h2 id="third para" style="background-color:rgb(0, 153, 255);"> Available Menus:</h2>
+<div id="division1">
+<div class="menu">
+<div id="div3" style="display:none;" class="newdiv1">
+<ol>Menu:Light Breakfast<img src="food.jpg">
+<li>Milk</li>
+<li>Sandwich</li>
+<li>Egg</li>
+<li>Cookies</li>
+</ol>
+</div>
+
+<div id="div4" style="display:none;" class="newdiv1">
+<ol>Menu:Heavy Breakfast<img src="food.jpg">
+<li>Chinese</li>
+<li>North Indian</li>
+<li>South Indian</li>
+<li>Italian</li>
+</ol>
+</div>
+</div>
+
+<div class="menu">
+<div id="div5" style="display:none;"class="newdiv2">
+<ol>Menu:Light Lunch<img src="food.jpg">
+<li>Burger</li>
+<li>Pasta</li>
+<li>Sandwich</li>
+<li>Pizza</li>
+</ol>
+</div>
+
+<div id="div6"style="display:none;" class="newdiv2">
+<ol>Menu:Heavy Lunch
+<img src="food.jpg">
+<li>Chinese</li>
+<li>North Indian</li>
+<li>South Indian</li>
+<li>Italian</li>
+</ol>
+</div>
+</div>
+<div class="menu">
+<div id="div7" style="display:none;"class="newdiv3">
+<ol>Menu:Light Snacks
+<img src="food.jpg">
+<li>Paratha</li>
+<li>Maggi</li>
+<li>Cookies</li>
+<li>Shake</li>
+
+</ol>
+</div>
+<div id="div8"style="display:none;"class="newdiv3">
+<ol>Menu:Heavy Snacks<img src="food.jpg">
+<li>Chinese</li>
+<li>North Indian</li>
+<li>South Indian</li>
+<li>Italian</li>
+</ol>
+</div>
+</div>
+<div class="menu">
+<div id="div9" style="display:none;"class="newdiv4">
+<ol>Menu:Light Dinner<img src="food.jpg">
+<li>Paneer pakoda</li>
+<li>Kadhai Paneer</li>
+<li>Palak Paneer</li>
+<li>Chole Bathure</li>
+</ol>
+</div>
+<div id="div10" style="display:none;"class="newdiv4">
+<ol>Menu:Heavy Dinner<img src="food.jpg">
+<li>Chicken Biryani</li>
+<li>Fried fish</li>
+<li>Omlete</li>
+<li>Butter Chicken</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
